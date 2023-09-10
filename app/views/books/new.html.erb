@@ -1,8 +1,18 @@
-<h1>New book</h1>
-<%= form_with model:@book do |f| %>
-  <div class="new-title">Title</div>
-  <%= f.text_field :title %>
-  <div class="new-body">Body</div>
-  <%= f.text_area :body %>
-  <%= f.submit 'Create Book' %>
-<% end %>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/stylesheets/application.css" />
+    <title>Bookers new</title>
+  </head>
+  
+  <body>
+    <h1>New book</h1>
+    <%= form_with model:@book do |f| %>
+      <div class="new-title">Title</div>
+      <%= f.text_field :title %>
+      <div class="new-body">Body</div>
+      <%= f.text_area :body %>
+      <div class="submit"><%= f.submit 'Create Book' %></div>
+    <% end %>
+  </div>
